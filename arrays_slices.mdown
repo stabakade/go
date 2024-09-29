@@ -1,0 +1,15 @@
+##### Arrays
+```go
+//
+initializes an array of size 3
+var a [3]int
+var b = [3]int{0, 0, 0}
+var c = [...]int{0, 0, 0}
+
+var d [3]int
+d = b // elements copied
+
+var m = [...]int{1, 2, 3, 4}
+m = c // type mismatch because these are array of different lengths
+// arrays are passed by value, thus elements are copied
+```
